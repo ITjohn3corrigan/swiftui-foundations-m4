@@ -16,5 +16,19 @@ class RecipeModel: ObservableObject {
         
         
     }
+    static func getPortion(ingredient:Ingredient,recipeServing:Int, targetServings:Int ) -> String {
+        //Get a single servings size by multiplying the denominator by the recipe servings
+        
+        //Get target portion by multiplying numerator by target portion
+        
+        //reduce fraction by greatest common divisor
+        
+        //Get the whole portion if Numerator is > denominator
+        
+        //Express the remainder as a fraction
+        
+       return String(targetServings)
+        
+    }
     
 }
