@@ -10,7 +10,10 @@ import SwiftUI
 struct RecipeFeaturedView: View {
    
     @EnvironmentObject var model:RecipeModel
+    @State var isDetailViewShowing = false
     var body: some View {
+       
+        
         VStack(alignment:.leading, spacing: 0){
                 Text("Featured Recipes")
                 .bold()
@@ -27,23 +30,35 @@ struct RecipeFeaturedView: View {
                     {index in
                         // only show the recipe if the featured value is true
                         if model.recipes[index].featured == true {
-                        //recipestack
-                            ZStack{
+                            Button(action:{
+                                self.isDetailViewShowing = true
                                 
-                                Rectangle().foregroundColor(.white)
-                                VStack(spacing:0)
-                                {
-                                    Image(model.recipes[index].image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .clipped()
-                                    Text(model.recipes[index].name)
-                                        .padding(5)
+                            }, label:{
+                                ZStack{
                                     
-                                }
-                                }.frame(width: geo.size.width - 40, height: geo.size.height  - 100, alignment: .center)
-                                .cornerRadius(15)
-                                .shadow(color: .black, radius: 10, x: -5, y: 5)
+                                    Rectangle().foregroundColor(.white)
+                                    VStack(spacing:0)
+                                    {
+                                        Image(model.recipes[index].image)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .clipped()
+                                        Text(model.recipes[index].name)
+                                            .padding(5)
+                                        
+                                    }
+                                    }
+                                   
+                                   })//recipestack
+                                .sheet(isPresented:$isDetailViewShowing){
+                                                                  RecipeDetailView(recipe:model.recipes[index])
+                                                              .buttonStyle(PlainButtonStyle())
+                                                              .frame(width: geo.size.width - 40, height: geo.size.height  - 100, alignment: .center)
+                                                                                            .cornerRadius(15)
+                                                                                            .shadow(color: .black, radius: 10, x: -5, y: 5)
+                        }
+                          
+                     
                         
                         
                             
