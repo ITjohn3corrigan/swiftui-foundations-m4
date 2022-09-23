@@ -19,6 +19,7 @@
 		EC01D8DE28D2A74C00D75B73 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC01D8DD28D2A74C00D75B73 /* Rational.swift */; };
 		EC4956D2289C994400FFF299 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4956D1289C994400FFF299 /* RecipeTabView.swift */; };
 		ECA81FB028A47C0C00FECB31 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA81FAF28A47C0C00FECB31 /* RecipeFeaturedView.swift */; };
+		ECBB1ADB28DBE7E7003F7313 /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB1ADA28DBE7E7003F7313 /* RecipeHighlights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		EC01D8DD28D2A74C00D75B73 /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 		EC4956D1289C994400FFF299 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		ECA81FAF28A47C0C00FECB31 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
+		ECBB1ADA28DBE7E7003F7313 /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				EC00A5922853C8DE00A7EE6D /* RecipeListView.swift */,
 				EC00A5AB28629C5200A7EE6D /* RecipeDetailView.swift */,
 				ECA81FAF28A47C0C00FECB31 /* RecipeFeaturedView.swift */,
+				ECBB1ADA28DBE7E7003F7313 /* RecipeHighlights.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				EC00A5932853C8DE00A7EE6D /* RecipeListView.swift in Sources */,
 				EC00A5AC28629C5400A7EE6D /* RecipeDetailView.swift in Sources */,
+				ECBB1ADB28DBE7E7003F7313 /* RecipeHighlights.swift in Sources */,
 				EC01D8DE28D2A74C00D75B73 /* Rational.swift in Sources */,
 				EC00A5A82853E2DB00A7EE6D /* RecipeModel.swift in Sources */,
 				EC00A5A62853DF9D00A7EE6D /* Recipes.swift in Sources */,
